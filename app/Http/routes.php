@@ -13,8 +13,15 @@
 Route::get('bonjour/{name}',['as'=> 'Première route', function($name){
     return "Bienvenu sur ma première route. Je suis $name";
 }]);
-Route::get('/', 'PremierController@index');
 
+Route::get('monsite', 'PremierController@index');
+
+Route::get('article/{n}', function($n) {
+    return view('article')->with('numero', $n);
+})->where('n','[0-9]+');
+
+Route::get('users','UsersController@getInfos');
+Route::post('users', 'UsersController@postinfos');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
