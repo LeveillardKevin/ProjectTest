@@ -40,7 +40,7 @@
             <div class="content">
                 <div class="title">Laravel 5</div>
                 <h1>Bienvenu sur le site de Laravel</h1>
-                <input type="submit" name="Bienvenu" value="Bienvenu"/>
+                <input type="submit" name="Bienvenu" value="Bienvenu" onclick="location.href='https://localhost:8000/article'">
             </div>
         </div>
     </body>

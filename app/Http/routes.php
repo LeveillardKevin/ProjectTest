@@ -16,10 +16,9 @@ Route::get('bonjour/{name}',['as'=> 'Première route', function($name){
 
 Route::get('monsite', 'PremierController@index');
 
-Route::get('article/{n}', function($n) {
-    return view('article')->with('numero', $n);
-})->where('n','[0-9]+');
-
+Route::get('article', function() {
+    return view('article');
+});
 Route::get('users','UsersController@getInfos');
 Route::post('users', 'UsersController@postinfos');
 /*
