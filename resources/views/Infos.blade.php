@@ -11,6 +11,6 @@
         {!! Form::label('prenom','Entrez votre prenom : ') !!}
         {!! Form::text('prenom') !!}
         <br>
-        {!! Form::submit('Envoyer !') !!}
+        {!! Form::submit('Envoyer !!!!') !!}
     {!! Form::close() !!}
 @stop
